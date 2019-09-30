@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>UNDP - United Nations Development Programme</title>
+		<!-- Style Links -->
+		<link rel="icon" href="images/icons/fav.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css" media="all" type="text/css" />
+    <link rel="stylesheet" href="fonts/font-awesome/all.min.css" media="all" type="text/css" />
+		<link rel="stylesheet" href="stylesheets/undp.css" media="all" type="text/css" />
+		<!-- End Style Links -->
+
+		<!-- JS Scripts -->
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/popper.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/undp.js"></script>
+    <!-- End JS Scripts -->
+	<body>
+    <div class="TopLangHeader">
+      <div class="langBar">
+        <div class="container d-flex justify-content-end">
+          <ul class="d-flex justify-content-end">
+            <li><a href="#">English</a></li>
+            <li><a href="#">Español</a></li>
+            <li><a href="#">Français</a></li>
+            </ul>
+            <span class="">Around the world</span>
+          </div>
+      </div>
+    </div>
+    <header>
+    	<div class="container">
+    		<nav class="navbar navbar-expand-lg">
+    			<a class="navbar-brand" href="#">
+    				<img src="images/logo.svg" alt="">
+            <span>United Nations Development Programme</span>
+    			</a>
+    			<div class="collapse navbar-collapse">
+            <div class="ml-auto">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sustainable Development Goals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hasMenu" href="#" data-target="focus">Our focus</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link hasMenu" href="#" data-target="more">more</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link search-btn" href="#"><i class="fas fa-search"></i></a>
+                </li>
+              </ul>
+              <div class="search-container">
+                <a class="" href="#"><i class="fas fa-search"></i></a>
+                <input id="search" type="text"  placeholder="search" name="" value="">
+              </div>
+            </div>
+    			</div>
+          <a href="#" class="donate-btn ml-auto d-sm-block d-none">donate</a>
+          <button class="navbar-toggler" type="button">
+            <div class="bar1"></div> <div class="bar2"></div>
+          </button>
+    		</nav>
+    	</div>
+    </header>
+    <div class="side-menu">
+      <div class="container">
+        <div class="top-header d-flex align-items-center">
+          <a class="" href="#">
+            <img src="images/logo.svg" alt="">
+          </a>
+          <ul class="d-flex flex-row">
+            <li><a href="#">English</a></li>
+            <li><a href="#">Español</a></li>
+            <li><a href="#">Français</a></li>
+          </ul>
+          <span class="close-btn ml-auto"><i class="fas fa-times"></i></span>
+          </div>
+          <div class="search-container">
+            <a class="" href="#"><i class="fas fa-search"></i></a>
+            <input class="" type="text" required placeholder="Search..." name="" value="">
+          </div>
+          <div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sustainable Development Goals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link open-submenu" href="#">
+									Our focus
+									<span class="d-sm-none d-block"><i class="bar1"></i><i class="bar2"></i></span>
+								</a>
+                <ul class="sideSubMenu">
+                  <li><a href="#">#NextGenUNDP</a></li>
+                  <li><a href="#">Three development settings</a></li>
+                  <li><a href="#">Six Signature Solutions</a></li>
+                  <li><a href="#">2030 Agenda for Sustainable Development</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link open-submenu" href="#" >
+									more
+									<span class="d-sm-none d-block"><i class="bar1"></i><i class="bar2"></i></span>
+								</a>
+                <ul class="sideSubMenu">
+                  <li><a href="#">#NextGenUNDP</a></li>
+                  <li><a href="#">Three development settings</a></li>
+                  <li><a href="#">Six Signature Solutions</a></li>
+                  <li><a href="#">2030 Agenda for Sustainable Development</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Around the world</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="dropdown-overlay">
+      <div class="dropdowns-container">
+        <div class="container">
+          <div class="sub-menu"  data-target="focus">
+            <ul class="d-flex justify-content-center align-items-center">
+              <li><a href="#">#NextGenUNDP</a></li>
+              <li><a href="#">Three development settings</a></li>
+              <li><a href="#">Six Signature Solutions</a></li>
+              <li><a href="#">2030 Agenda for Sustainable Development</a></li>
+            </ul>
+          </div>
+          <div class="sub-menu"  data-target="more">
+            <ul class="d-flex justify-content-center align-items-center">
+              <li><a href="#">#NextGenUNDP</a></li>
+              <li><a href="#">Three development settings</a></li>
+              <li><a href="#">Six Signature Solutions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="langContainer">
+      <div class="container">
+        <div class="title d-flex justify-content-between">
+          <h2>UNDP Around the world</h2>
+          <span class="close-btn"><i class="fas fa-times"></i></span>
+          </div>
+      </div>
+    </div> -->
+    <div class="content">
+    </div>
+    <footer>
+      <div class="upperFooter">
+        <div class="container">
+          <div class="top d-flex justify-content-sm-between justify-content-center">
+            <div>
+							<a href="#"><img src="images/footer-img1.png" alt=""></a>
+            </div>
+            <div>
+							<a href="#"><img src="images/footer-img2.png" alt=""></a>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="row">
+              <div class="col-lg-4 col-md-4  col-sm-12">
+                <div class="footer-dropdown">
+                  <h3 class="open-submenu">Our focus
+										<span class="d-sm-none d-block"><i class="bar1"></i><i class="bar2"></i></span>
+                  </h3>
+                  <ul class="sideSubMenu">
+                    <li><a href="#">#NextGenUNDP</a></li>
+                    <li><a href="#">Three development settings</a></li>
+                    <li><a href="#">Six Signature Solutions</a></li>
+                    <li><a href="#">2030 Agenda for Sustainable Development</a></li>
+                    <li><hr></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Planet</a></li>
+                    <li><a href="#">Prosperity</a></li>
+                    <li><a href="#">Peace</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="footer-dropdown">
+                  <h3  class="open-submenu">Explore
+										<span class="d-sm-none d-block"><i class="bar1"></i><i class="bar2"></i></span>
+                  </h3>
+                  <ul class="sideSubMenu">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Publications</a></li>
+                    <li><a href="#">News centre</a></li>
+                  </ul>
+                </div>
+                <div class="footer-dropdown">
+                  <h3  class="open-submenu">More
+										<span class="d-sm-none d-block"><i class="bar1"></i><i class="bar2"></i></span>
+                  </h3>
+                  <ul class="sideSubMenu">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">UNDP and the UN</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Shop UNDP</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="footer-dropdown">
+                  <h3 class="open-submenu">Operations
+										<span class="d-sm-none d-block"><i class="bar1"></i><i class="bar2"></i></span>
+                  </h3>
+                  <ul  class="sideSubMenu">
+                    <li><a href="#">UNDP resources</a></li>
+                    <li><a href="#">Accountability</a></li>
+                    <li><a href="#">Transparency </a></li>
+                    <li><a href="#">Procurement</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class=" d-flex align-items-lg-end align-items-center flex-column">
+                  <ul class="d-flex justify-content-end social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
+                  <div class="subscribe">
+                    <p>Sign up for monthly highlights</p>
+
+                    <form class="" action="index.html" method="post">
+                      <div class="input-group">
+                        <input class="form-control" type="email" required placeholder="Email Address" name="" value="">
+                        <div>
+                          <button type="submit" class="btn">GO</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="lowerFooter">
+        <div class="container">
+          <div class="bottom clear">
+						<ul class="clear related-links">
+							<li><a href="#">Report fraud, abuse, misconduct</a></li>
+							<li><a href="#">Submit social or environmental complaint</a></li>
+							<li><a href="#">Scam alert</a></li>
+							<li><a href="#">Terms of use</a></li>
+						</ul>
+            <p>© 2019   United Nations Development Programme</p>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+	</body>
+</html>
