@@ -1,9 +1,6 @@
-// @font-face {
-// 	font-family: 'nova';
-// 	src: url(../fonts/ProximaNovaRegular.otf);
 
 @font-face{
-	font-family:nova;
+	font-family:'nova';
 	font-style:normal;
 	font-weight:600;
 	src:local("Proxima Nova Semibold"),local("ProximaNova-Semibold"),
@@ -11,7 +8,7 @@
 	url(../fonts/proximanova-semibold-webfont.woff) format("woff")
 }
 
-  
+
 a{
 	&:hover{
 		text-decoration: none;
@@ -99,8 +96,11 @@ body {
 }
 header {
   @media(min-width: 992px) {
-	position: fixed;
-}
+		position: fixed;
+	}
+	@media(max-width: 992px) {
+		box-shadow: none;
+	}
   top: 35px;
   left: 0;
   z-index: 10;
@@ -117,13 +117,16 @@ header {
 		box-shadow: 0  2px 5px 0 rgba(0,0,0,0.1);
 		.navbar {
 			padding: 15px 0;
+			@media(max-width: 992px) {
+				padding: 9px 0;
+			}
 			.navbar-brand {
 				padding: 0;
 				img {
 					width: 30px;
 				}
 				span{
-					font-size: 11px;
+					font-size: 12px;
 					color: $black;
 					font-weight: $semi-bold;
 					width: 200px;
@@ -132,10 +135,11 @@ header {
 					vertical-align: middle;
 					line-height: 1;
 					margin-left: 15px;
-					letter-spacing: .46px;
+					letter-spacing: .4px;
 			   		text-transform: capitalize;
 					@media(max-width: 992px) {
 							width: auto;
+							font-size:10px
 					}
 				}
 			}
@@ -175,7 +179,7 @@ header {
 					background-color: #02569a;
 				}
 				@media(max-width: 992px) {
-						margin-right: 30px;
+						margin-right: 32px;
 				}
 			}
 			.search-container{
@@ -198,12 +202,13 @@ header {
 			top:0 !important;
 			.navbar-toggler {
 				box-shadow: none;
+				padding: 0;
+				outline: 0;
 				> div {
 					width: 30px;
 					height: 3px;
 					background-color: #000;
 					margin: 5px 0;
-
 				}
 			}
 		}
@@ -219,10 +224,10 @@ header {
 	color: $black;
 	padding: 10px 0;
 	overflow: auto;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	transition: all .5s ease;
+	-webkit-transition: all .6s ease;
+	-moz-transition: all .6s ease;
+	-ms-transition: all .6s ease;
+	transition: all .6s ease;
 	&.active{
 		left:0;
 	}
@@ -259,16 +264,17 @@ header {
 			 border: 0;
 			 width: 400px;
 			 margin-left: 20px;
+			 max-width: calc(100% - 42px);
 			 &:focus{
 				 outline: 0;
 			 }
 			 &::placeholder {
 				  color: #c2c2c2;
 				}
-				:-ms-input-placeholder {
+				&:-ms-input-placeholder {
 				 color: #c2c2c2;
 				}
-				::-ms-input-placeholder {
+				&::-ms-input-placeholder {
 				 color: #c2c2c2;
 				}
 		 }
@@ -279,7 +285,7 @@ header {
 		>li{
 			>a{
 				display: block;
-				border-bottom: 1px solid #ece9e9;
+				border-bottom: 1px solid rgba(#8a8a8a , 0.2);
 				letter-spacing: 1px;
 				padding: 11px 0;
 				color: $black;
@@ -369,6 +375,8 @@ footer{
 			padding: 50px 0 0;
 			@media(max-width: 576px) {
 				padding-top: 30px;
+				letter-spacing:normal;
+
 			}
 			letter-spacing: 1px;
 			h3{
@@ -409,22 +417,31 @@ footer{
 				}
 			}
 			.social-links{
+				text-align: center;
 				@media(max-width: 576px) {
 					padding-top: 20px;
 				}
+
 				li{
 					padding: 0;
-					margin:0 17px;
+					margin:0 16px;
+					display: inline-block;
 					a{
-						font-size: 16px;
+						font-size: 15px;
 
 					}
 				}
 			}
 			.subscribe{
+				@media(max-width: 576px) {
+					max-width: 73%;
+	    		margin: auto;
+				}
 				p{
 					font-weight: $semi-bold;
 					font-size: 16px;
+					text-align: center;
+
 				}
 				form {
 					.input-group {
@@ -440,6 +457,15 @@ footer{
 								border-color: #fefefe;
 						    box-shadow: 0 0 5px #cacaca;
 							}
+							&::placeholder {
+								 color: #cacaca;
+							 }
+							 &:-ms-input-placeholder {
+								color: #c2c2c2;
+							 }
+							 &::-ms-input-placeholder {
+								color: #c2c2c2;
+							 }
 						}
 						>div{
 							.btn{
@@ -523,9 +549,9 @@ footer{
 			}
 		}
 		&.active{
-			transform: rotate(-45deg);
-			-moz-transform: rotate(-45deg);
-			-webkit-transform: rotate(-45deg);
+			transform: rotate(225deg);
+			-moz-transform: rotate(225deg);
+			-webkit-transform: rotate(225deg);
 			i{
 				background-color: #0c91fc !important;
 				width: 10px;
@@ -535,5 +561,4 @@ footer{
 }
 .side-menu .navbar-nav > li > a.open-submenu span i{
 	background-color: $black;
-
 }
